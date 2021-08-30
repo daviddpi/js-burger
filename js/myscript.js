@@ -45,6 +45,8 @@ function(){
             }
             if(listaCoupon.includes(coupon.value)){
                 prezzoBurger = prezzoBurger * 0.8;
+            } else{
+                alert("Il tuo coupon non esiste");
             }
         }
         document.getElementById("prezzo-burger").innerHTML = prezzoBurger.toFixed(2) + " &euro;";

@@ -16,105 +16,94 @@
     <title>Burger shop</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-
-                <!-- header -->
-                <header>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1>Create Your Burger</h1>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                
-                <!-- main  -->
-                <main>
-                    <div class="container">
-                        <div class="row">
-                            
-                            <!-- nome hamburger -->
-                            <div class="col-12">
-                                <input type="text" id="nome-burger" placeholder="Name Your Burger">
-                                <h3>Ingredients</h3>
-                            </div>
-
-                                <!-- sezione degli ingredienti -->
-                            <div class="col-6">
-                                <ul>
-                                    <li>
-                                        <label>Tomato</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-pomodoro" name="pomodoro" value="pomodoro">
-                                        <label>Add</label>
-                                    </li>
-                                    <li>
-                                        <label>Lettuce</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-lattuga" name="lattuga" value="lattuga">
-                                        <label>Add</label>
-                                        
-                                    </li>
-                                    <li>
-                                        <label>Ketchup</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-ketchup" name="ketchup" value="ketchup">
-                                        <label>Add</label> 
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-6">
-                                <ul>
-                                    <li>
-                                        <label>Cheese</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-formaggio" name="formaggio" value="formaggio">
-                                        <label>Add</label>
-                                    </li>
-                                    <li>
-                                        <label>Egg</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-uovo" name="uovo" value="uovo">
-                                        <label>Add</label>
-                                    </li>
-                                    <li>
-                                        <label>Mustard</label>
-                                        <input class="add-ingredients" type="checkbox" id="ch-mostarda" name="mostarda" value="mostarda">
-                                        <label">Add</label>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12">
-                                <p>Discount Coupon</p>
-                                <input type="text" id="coupon" placeholder="#GRGPUB20">
-                            </div>
-
-                            <div class="col-12">
-                                <button id="btn-calcolo" class="text-center" type="button">calculate</button>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                
-                <!-- footer  -->
-                <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 d-flex justify-content-between">
-                                <h3>Your Price</h3>
-                                <h3 id="prezzo-burger">&euro;</h3>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-            </div>
-            <div class="col-6">
-
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Create Your Burger</h1>
+                </div>
             </div>
         </div>
+    </header>
+    
+    <!-- main  -->
+    <main>
+        <div class="container">
+            <div class="row">
+                
+                <!-- nome hamburger -->
+                <div class="col-12">
+                    <input type="text" id="nome-burger" placeholder="Name Your Burger">
+                    <h3>Ingredients</h3>
+                </div>
 
-    </div>
- 
+                    <!-- sezione degli ingredienti -->
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <label>Tomato</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-pomodoro" name="pomodoro" value="pomodoro">
+                            <label>Add</label>
+                        </li>
+                        <li>
+                            <label>Lettuce</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-lattuga" name="lattuga" value="lattuga">
+                            <label>Add</label>
+                            
+                        </li>
+                        <li>
+                            <label>Ketchup</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-ketchup" name="ketchup" value="ketchup">
+                            <label>Add</label> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <label>Cheese</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-formaggio" name="formaggio" value="formaggio">
+                            <label>Add</label>
+                        </li>
+                        <li>
+                            <label>Egg</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-uovo" name="uovo" value="uovo">
+                            <label>Add</label>
+                        </li>
+                        <li>
+                            <label>Mustard</label>
+                            <input class="add-ingredients" type="checkbox" id="ch-mostarda" name="mostarda" value="mostarda">
+                            <label">Add</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12">
+                    <p>Discount Coupon</p>
+                    <input type="text" id="coupon" placeholder="#GRGPUB20">
+                </div>
+
+                <div class="col-12">
+                    <button id="btn-calcolo" class="text-center" type="button">calculate</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                    <h3>Your Price</h3>
+                    <h3 id="prezzo-burger">&euro;</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
 </body>
 </html>
