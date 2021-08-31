@@ -10,31 +10,38 @@ function(){
     if(nomeBurger.value.length > 0){ //se è stato inserito un nome va avanti altrimenti no
         
         let prezzoBurger = 7;
-        let formaggio = document.getElementById("ch-formaggio");
-        let uovo = document.getElementById("ch-uovo");
-        let mostarda = document.getElementById("ch-mostarda");
-        let pomodoro = document.getElementById("ch-pomodoro");
-        let lattuga = document.getElementById("ch-lattuga");
-        let ketchup = document.getElementById("ch-ketchup");
+        // let formaggio = document.getElementById("ch-formaggio");
+        // let uovo = document.getElementById("ch-uovo");
+        // let mostarda = document.getElementById("ch-mostarda");
+        // let pomodoro = document.getElementById("ch-pomodoro");
+        // let lattuga = document.getElementById("ch-lattuga");
+        // let ketchup = document.getElementById("ch-ketchup");
+
+        //soluzione non corretta
+        // if(formaggio.checked){
+        //     prezzoBurger += 3.5;
+        // }
+        // if(uovo.checked){
+        //     prezzoBurger += 5;
+        // }
+        // if(mostarda.checked){
+        //     prezzoBurger += 2;
+        // }
+        // if(pomodoro.checked){
+        //     prezzoBurger += 4;
+        // }
+        // if(lattuga.checked){
+        //     prezzoBurger += 2.5;
+        // }
+        // if(ketchup.checked){
+        //     prezzoBurger += 1;
+        // }
 
         //se i prodotti sono selezionati il prezzo aumenta
-        if(formaggio.checked){
-            prezzoBurger += 3.5;
-        }
-        if(uovo.checked){
-            prezzoBurger += 5;
-        }
-        if(mostarda.checked){
-            prezzoBurger += 2;
-        }
-        if(pomodoro.checked){
-            prezzoBurger += 4;
-        }
-        if(lattuga.checked){
-            prezzoBurger += 2.5;
-        }
-        if(ketchup.checked){
-            prezzoBurger += 1;
+        for(var i = 0; i < addIngredients.length; i++){
+            if(addIngredients[i].checked){
+                prezzoBurger += parseFloat( addIngredients[i].value );
+            }
         }
 
         let coupon = document.getElementById("coupon");
