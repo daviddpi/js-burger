@@ -1,0 +1,55 @@
+.my_text-red{
+    color: red;
+}
+
+#name-page{
+    background-color: #fdbb40;
+}
+
+#name-page .row{
+    height: 130px;
+}
+
+#nome-burger{
+    font-size: 1.5em;
+    border: none;
+}
+
+#ingredienti ul{
+    list-style-type: none;
+}
+
+#ingredienti ul li{
+    padding: 10px;
+}
+
+#ingredienti ul li label{
+    padding: 0px 7px;
+}
+
+#coupon{
+    border: none;
+    width: 55%;
+    background-color: #fff5e2;
+}
+
+#btn-calcolo{
+    background-color: #fdbb40;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#your-price{
+    color: white;
+    background-color: #d33359;
+}
+
+#your-price .row{
+    height: 80px;
+}
+
+#parte-destra{
+    background-color: #fff5e2;
+    height: 100vh;
+}
